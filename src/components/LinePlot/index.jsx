@@ -16,10 +16,10 @@ export default function LinePlot({
       <path
         fill="none"
         stroke="currentColor"
-        stroke-width="1.5"
+        strokeWidth="1.5"
         d={line(data)}
       />
-      <g fill="white" stroke="currentColor" stroke-width="1.5">
+      <g fill="white" stroke="currentColor" strokeWidth="1.5">
         {data.map((d, i) => (
           <circle key={i} cx={x(i)} cy={y(d)} r="2.5" />
         ))}

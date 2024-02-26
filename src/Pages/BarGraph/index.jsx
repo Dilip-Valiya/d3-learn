@@ -1,5 +1,6 @@
 import { BarChart } from "../../components/BarGraph/BarChart";
 import { GroupedBarChart } from "../../components/BarGraph/GroupedBarChart";
+import { StackedBarChart } from "../../components/BarGraph/StackBarChart";
 
 const BAR_CHART_DATA = [
   { label: "Apples", value: 100 },
@@ -14,7 +15,7 @@ const GROUPED_BAR_CHART_DATA = [
   { label: "Oranges", values: [60, 40, 10] },
 ];
 
-export default function App() {
+export default function BarGraph() {
   return (
     <div className="container">
       <h1>
@@ -31,10 +32,10 @@ export default function App() {
         <h2>Grouped bar chart with tooltip</h2>
         <GroupedBarChart data={GROUPED_BAR_CHART_DATA} />
       </section>
-      {/* <section>
+      <section>
         <h2>Stacked bar chart</h2>
         <StackedBarChart data={GROUPED_BAR_CHART_DATA} />
-      </section> */}
+      </section>
     </div>
   );
 }
